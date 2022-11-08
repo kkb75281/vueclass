@@ -3,38 +3,26 @@
     <h2 class="blind">유용한 사이트 살펴보기</h2>
     <div class="imgText__inner container">
       <div class="imgText__txt" :class="layout">
-        <span>{{ imgTexts[0].span }}</span>
-        <h3>{{ imgTexts[0].h3 }}</h3>
-        <p>{{ imgTexts[0].p }}</p>
+        <span>STAY</span>
+        <h3>JEJU sari Interior</h3>
+        <p>
+          모던하고 아늑한 분위기로 제주 자연의 따뜻함과 청량함을 객실에 그대로
+          담았습니다.
+        </p>
         <ul>
-          <li>
-            <a href="#">{{ imgTexts[0].li }}</a>
-          </li>
-          <li>
-            <a href="#">{{ imgTexts[0].li2 }}</a>
-          </li>
-          <li>
-            <a href="#">{{ imgTexts[0].li3 }}</a>
-          </li>
-          <li>
-            <a href="#">{{ imgTexts[0].li4 }}</a>
-          </li>
-          <li>
-            <a href="#">{{ imgTexts[0].li5 }}</a>
-          </li>
-          <li>
-            <a href="#">{{ imgTexts[0].li6 }}</a>
-          </li>
+          <li><a href="#">Deluxe</a></li>
+          <li><a href="#">Deluxe Family</a></li>
+          <li><a href="#">Premier</a></li>
+          <li><a href="#">Premier Family</a></li>
+          <li><a href="#">Junior Suite</a></li>
+          <li><a href="#">Junior Suite Family</a></li>
         </ul>
       </div>
-
-      <div
-        class="imgText__img"
-        :class="img.divClass"
-        v-for="img in imgs"
-        v-bind:key="img.imgs"
-      >
-        <a href="#" :class="aClass">{{ img.text }}</a>
+      <div class="imgText__img img1">
+        <a href="#">Deluxe</a>
+      </div>
+      <div class="imgText__img img2">
+        <a href="#">Deluxe Family</a>
       </div>
     </div>
   </section>
@@ -45,33 +33,6 @@ export default {
   props: {
     attr: String,
     layout: String,
-  },
-  data: function () {
-    return {
-      imgTexts: [
-        {
-          span: "STAY",
-          h3: "JEJU sari Interior",
-          p: "모던하고 아늑한 분위기로 제주 자연의 따뜻함과 청량함을 객실에 그대로 담았습니다.",
-          li: "Deluxe",
-          li2: "Deluxe Family",
-          li3: "Premier",
-          li4: "Premier Family",
-          li5: "Junior",
-          li6: "Junior Family",
-        },
-      ],
-      imgs: [
-        {
-          divClass: "img1",
-          text: "Deluxe",
-        },
-        {
-          divClass: "img2",
-          text: "Deluxe Family",
-        },
-      ],
-    };
   },
 };
 </script>
@@ -100,7 +61,6 @@ export default {
   font-size: 50px;
   font-weight: 300;
   margin-bottom: 20px;
-  color: #ccc;
 }
 .imgText__txt p {
   font-size: 18px;
@@ -134,7 +94,6 @@ export default {
 .imgText__img {
   border-radius: 10px;
   position: relative;
-  margin-right: 20px;
 }
 .imgText__img a {
   position: absolute;

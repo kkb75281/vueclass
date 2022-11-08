@@ -2,12 +2,12 @@
   <section id="bannerType" class="banner__wrap" :class="attr">
     <h2 class="blind">배너 영역</h2>
     <div class="banner__inner">
-      <h3 class="banner__title">{{ banners[0].h3 }}</h3>
+      <h3 class="banner__title">RESERVATION</h3>
       <p class="banner__desc">
-        {{ banners[0].p }}
-        <a href="#" title="새페이지 열림">{{ banners[0].a }}</a>
+        아래 링크를 통해 실시간 예약 일정을 확인하실 수 있습니다.
+        <a href="#" title="새페이지 열림">reservation.com/c/JEJUsari</a>
       </p>
-      <span class="banner__small">{{ banners[0].span }}</span>
+      <span class="banner__small">JEJU sari</span>
     </div>
   </section>
 </template>
@@ -16,18 +16,6 @@
 export default {
   props: {
     attr: String,
-  },
-  data: function () {
-    return {
-      banners: [
-        {
-          h3: "RESERVATION",
-          p: "아래 링크를 통해 실시간 예약 일정을 확인하실 수 있습니다.",
-          a: "reservation.com/c/JEJUsari",
-          span: "JEJU sari",
-        },
-      ],
-    };
   },
 };
 </script>

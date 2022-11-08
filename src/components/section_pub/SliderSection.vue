@@ -11,14 +11,45 @@
       }"
       class="mySwiper"
     >
-      <swiper-slide v-for="slide in slides" v-bind:key="slide.slide">
+      <swiper-slide>
         <div class="desc">
-          <span>{{ slide.span }}</span>
-          <h3>{{ slide.h3 }}</h3>
-          <p style="white-space: pre-line">{{ slide.p }}</p>
+          <span>INTRODUCE</span>
+          <h3>with JEJUSARI</h3>
+          <p>
+            제주의 옛 서까래와 빈티지 가구,<br />
+            디자인 조명이 만나 과거의 현대가 어우러지는 공간
+          </p>
           <div class="btn">
             <a href="#">자세히 보기</a>
-            <a href="#" :class="slide.aClass">사이트 보기</a>
+            <a href="#" class="black">사이트 보기</a>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="desc">
+          <span>INTRODUCE</span>
+          <h3>with JEJUSARI</h3>
+          <p>
+            제주의 옛 서까래와 빈티지 가구,<br />
+            디자인 조명이 만나 과거의 현대가 어우러지는 공간
+          </p>
+          <div class="btn">
+            <a href="#">자세히 보기</a>
+            <a href="#" class="black">사이트 보기</a>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="desc">
+          <span>INTRODUCE</span>
+          <h3>with JEJUSARI</h3>
+          <p>
+            제주의 옛 서까래와 빈티지 가구,<br />
+            디자인 조명이 만나 과거의 현대가 어우러지는 공간
+          </p>
+          <div class="btn">
+            <a href="#">자세히 보기</a>
+            <a href="#" class="black">사이트 보기</a>
           </div>
         </div>
       </swiper-slide>
@@ -44,30 +75,6 @@ export default {
   setup() {
     return {
       modules: [Autoplay, Navigation, Pagination],
-    };
-  },
-  data: function () {
-    return {
-      slides: [
-        {
-          span: "INTRODUCE",
-          h3: "with JEJUSARI",
-          p: "제주의 옛 서까래와 빈티지 가구,\n디자인 조명이 만나 과거의 현대가 어우러지는 공간",
-          aClass: "black",
-        },
-        {
-          span: "INTRODUCE",
-          h3: "with JEJUSARI",
-          p: "제주의 옛 서까래와 빈티지 가구,\n디자인 조명이 만나 과거의 현대가 어우러지는 공간",
-          aClass: "black",
-        },
-        {
-          span: "INTRODUCE",
-          h3: "with JEJUSARI",
-          p: "제주의 옛 서까래와 빈티지 가구,\n디자인 조명이 만나 과거의 현대가 어우러지는 공간",
-          aClass: "black",
-        },
-      ],
     };
   },
 };

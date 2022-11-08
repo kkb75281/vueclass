@@ -122,6 +122,7 @@ export default {
 .footer__menu h3 {
   font-size: 18px;
   margin-bottom: 20px;
+  color: #ccc;
 }
 
 .footer__menu li a {
