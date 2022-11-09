@@ -49,17 +49,17 @@ export default {
       ],
       cards: [
         {
-          img: "../../assets/img/card_bg01_01.jpg",
+          img: "https://github.com/kkb75281/vueclass/blob/main/src/assets/img/card_bg01_01.jpg?raw=true",
           tit: "Family Lounge",
           desc: "가족과 함께하는 여행, 편안한 휴식을 선사하고자 합니다. 패밀리 라운지는 오션뷰가 아름다운 라운지 공간과 컬러풀한 디자인으로 마련된 어린이 클래스 공간으로 나눠져 있습니다.",
         },
         {
-          img: "../../assets/img/card_bg01_02.jpg",
+          img: "https://github.com/kkb75281/vueclass/blob/main/src/assets/img/card_bg01_02.jpg?raw=true",
           tit: "Outdoor Pool",
           desc: "제주 바다의 푸르름, 파도소리와 어우러지는 음악은 여정을 더욱 즐겁게 만듭니다. 청정한 공기로 가득한 휴식공간에서 자쿠지의 따뜻함에 기대 푸른 별을 바라보면, 휴식의 진정한 본질을 깨달을 수 있습니다.",
         },
         {
-          img: "../../assets/img/card_bg01_03.jpg",
+          img: "https://github.com/kkb75281/vueclass/blob/main/src/assets/img/card_bg01_03.jpg?raw=true",
           tit: "Meeting Room",
           desc: "프라이빗하고 고급스러운 분위기의 미팅룸으로 임원 미팅 및 VIP 행사에 적합합니다. 소그룹부터 대그룹의 인원까지 수용가능한 미팅룸으로",
         },
